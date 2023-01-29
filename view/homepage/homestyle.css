@@ -1,0 +1,146 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* background-color: rgb(0, 0, 0); */
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  /* padding-right: 3%;    */
+  /* padding-left: 2%; */
+  width: 100%;
+}
+.topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333; */
+  /* border-radius: 2px; */
+  width: 100;
+}
+
+.topnav li {
+  float: right;
+  /* display: inline; */
+  margin-top: 3%;
+  margin-right: 2%;
+}
+
+.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 150%;
+  float: left;
+}
+
+.topnav li a:hover {
+  background-color: rgb(230, 212, 14);
+}
+
+.logo {
+  float: left;
+  display: block;
+  color: #111;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-right: 200px;
+  font-size: 150%;
+}
+
+.backimage{
+  height: 600px;
+  background-image: url(../../src/images/pic5.jpg);
+}
+
+.offers .head p {
+  font-size: 40px;
+  text-align: center;
+}
+
+.servicesgallery{
+  padding-left: 5%;
+  
+}
+
+.servicesgallery .servigallery1 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  float: left;
+  width: 350px;
+  margin-right: 4%;
+  margin-top: 2%;
+  transition: transform .2s;
+  
+}
+.servicesgallery .servigallery2 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 350px;
+  margin-right: 4%;
+  border-radius: 4px;
+  margin-top: 2%;
+  transition: transform .2s;
+}
+
+.servicesgallery .servigallery3 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 350px;
+  margin-right: 1%;
+  border-radius: 4px;
+  margin-top: 2%;
+  transition: transform .2s;
+}
+
+
+
+
+.servicesgallery .servigallery1:hover {
+  border: 1px solid #777;
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+
+.servicesgallery .servigallery1  img {
+  width: 100%;
+  height: auto;
+}
+.servicesgallery .servigallery2:hover {
+  border: 1px solid #777;
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
+
+}
+
+.servicesgallery .servigallery2  img {
+  width: 100%;
+  height: auto;
+}
+.servicesgallery .servigallery3:hover {
+  border: 1px solid #777;
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
+}
+
+.servicesgallery .servigallery3  img {
+  width: 100%;
+  height: auto;
+}
+
+.servicesgallery .desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 120%;
+}
