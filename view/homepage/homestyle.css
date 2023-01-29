@@ -58,11 +58,40 @@ body {
 }
 
 .backimage{
-  height: 600px;
+  height: 700px;
   background-image: url(../../src/images/pic5.jpg);
   margin-top: 0%;
   position: relative;
   top: 0;
+  animation: change 30s infinite ease-in-out;
+}
+@keyframes change{
+  0%
+  {
+    background-image: url(../../src/images/pic2.jpg);
+  }
+  20%
+  {
+    background-image: url(../../src/images/pic3.jpg);
+  }
+  40%
+  {
+    background-image: url(../../src/images/pic4.jpg);
+  }
+  60%
+  {
+    background-image: url(../../src/images/pic2.jpg);
+  }
+  80%
+  {
+    background-image: url(../../src/images/pic2.jpg);
+  }
+  100%
+  {
+    background-image: url(../../src/images/pic3.jpg);
+  }
+
+
 }
 /* service gallery starts here  */
 .servicesextra{
@@ -121,7 +150,7 @@ body {
   border: 1px solid #ccc;
   float: left;
   width: 350px;
-  margin-right: 1%;
+  margin-right: 0%;
   border-radius: 4px;
   margin-top: 2%;
   transition: transform .2s;
@@ -215,7 +244,7 @@ body {
   border: 1px solid #ccc;
   float: left;
   width: 350px;
-  margin-right: 1%;
+  margin-right: 0%;
   border-radius: 4px;
   margin-top: 2%;
   transition: transform .2s;
@@ -259,3 +288,89 @@ body {
   text-align: center;
   font-size: 120%;
 }
+
+/* footer starts here */
+
+.footer {
+  background-color: #252323;
+  padding: 15px;
+  text-align: center; 
+  height: 300%;
+  color: aliceblue;
+  margin-top: 58%;
+ 
+}
+
+.row .column h2{
+  color: var(--golden);
+}
+.row .column p{
+  font-size: 120%;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 29%;
+  padding: 15px;
+  margin-right: 2%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* social media icons */
+.fa {
+  padding: 10px; 
+  font-size: 25px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 1px;
+  border-radius: 50%;
+ 
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-instagram {
+  background:  rgb(173, 25, 165);
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-telegram {
+  background: #3888a8;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-whatsapp {
+  background: #12be29;
+  color: white;
+}
+  
+
+
+
