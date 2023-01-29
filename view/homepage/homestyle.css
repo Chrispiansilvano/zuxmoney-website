@@ -68,27 +68,27 @@ body {
 @keyframes change{
   0%
   {
-    background-image: url(../../src/images/pic2.jpg);
+    background-image: url(../../src/images/pic5.jpg);
   }
   20%
   {
-    background-image: url(../../src/images/pic3.jpg);
+    background-image: url(../../src/images/pic6.jpg);
   }
   40%
   {
-    background-image: url(../../src/images/pic4.jpg);
+    background-image: url(../../src/images/pic8.jpg);
   }
   60%
   {
-    background-image: url(../../src/images/pic2.jpg);
+    background-image: url(../../src/images/pic5.jpg);
   }
   80%
   {
-    background-image: url(../../src/images/pic2.jpg);
+    background-image: url(../../src/images/pic6.jpg);
   }
   100%
   {
-    background-image: url(../../src/images/pic3.jpg);
+    background-image: url(../../src/images/pic8.jpg);
   }
 
 
