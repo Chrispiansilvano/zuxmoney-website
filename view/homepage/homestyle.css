@@ -4,8 +4,12 @@ body {
   /* background-color: rgb(0, 0, 0); */
 }
 
+:root{
+  --golden: rgb(230, 212, 14);
+}
+
 .topnav {
-  position: fixed;
+  position: relative;
   top: 0;
   /* padding-right: 3%;    */
   /* padding-left: 2%; */
@@ -39,7 +43,7 @@ body {
 }
 
 .topnav li a:hover {
-  background-color: rgb(230, 212, 14);
+  background-color: var(--golden);
 }
 
 .logo {
@@ -56,16 +60,32 @@ body {
 .backimage{
   height: 600px;
   background-image: url(../../src/images/pic5.jpg);
+  margin-top: 0%;
+  position: relative;
+  top: 0;
+}
+/* service gallery starts here  */
+.servicesextra{
+
 }
 
-.offers .head p {
+.services .head p {
   font-size: 40px;
   text-align: center;
 }
 
+.services .head p span {
+  color: var(--golden);
+}
+
+
+
 .servicesgallery{
   padding-left: 5%;
   
+}
+.servicesgallery span{
+  color: var(--golden);
 }
 
 .servicesgallery .servigallery1 {
@@ -77,7 +97,10 @@ body {
   margin-right: 4%;
   margin-top: 2%;
   transition: transform .2s;
-  
+}
+.servicesgallery .servigallery1 p {
+  font-size: 150%;
+  text-align: center;
 }
 .servicesgallery .servigallery2 {
   margin: 5px;
@@ -89,7 +112,10 @@ body {
   margin-top: 2%;
   transition: transform .2s;
 }
-
+.servicesgallery .servigallery2 p {
+  font-size: 150%;
+  text-align: center;
+}
 .servicesgallery .servigallery3 {
   margin: 5px;
   border: 1px solid #ccc;
@@ -100,17 +126,16 @@ body {
   margin-top: 2%;
   transition: transform .2s;
 }
-
-
-
-
+.servicesgallery .servigallery3 p {
+  font-size: 150%;
+  text-align: center;
+}
 .servicesgallery .servigallery1:hover {
   border: 1px solid #777;
   -ms-transform: scale(1.05); /* IE 9 */
   -webkit-transform: scale(1.05); /* Safari 3-8 */
   transform: scale(1.05); 
 }
-
 .servicesgallery .servigallery1  img {
   width: 100%;
   height: auto;
@@ -120,9 +145,7 @@ body {
   -ms-transform: scale(1.05); /* IE 9 */
   -webkit-transform: scale(1.05); /* Safari 3-8 */
   transform: scale(1.05);
-
 }
-
 .servicesgallery .servigallery2  img {
   width: 100%;
   height: auto;
@@ -133,13 +156,105 @@ body {
   -webkit-transform: scale(1.05); /* Safari 3-8 */
   transform: scale(1.05);
 }
-
 .servicesgallery .servigallery3  img {
   width: 100%;
   height: auto;
 }
-
 .servicesgallery .desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 120%;
+}
+/* special offers gallery starts here  */
+.offers .head {
+  margin-top: 2%;
+}
+.offers .head p {
+  font-size: 40px;
+  text-align: center;
+}
+.offers .head p span {
+  color: var(--golden);
+}
+.offersgallery{
+  padding-left: 5%;
+}
+.offersgallery span{
+  color: var(--golden);
+}
+.offersgallery .offgallery1 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  float: left;
+  width: 350px;
+  margin-right: 4%;
+  margin-top: 2%;
+  transition: transform .2s;
+}
+.offersgallery .offgallery1 p {
+  font-size: 150%;
+  text-align: center;
+}
+.offersgallery .offgallery2 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 350px;
+  margin-right: 4%;
+  border-radius: 4px;
+  margin-top: 2%;
+  transition: transform .2s;
+}
+.offersgallery .offgallery2 p {
+  font-size: 150%;
+  text-align: center;
+}
+.offersgallery .offgallery3 {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 350px;
+  margin-right: 1%;
+  border-radius: 4px;
+  margin-top: 2%;
+  transition: transform .2s;
+}
+.offersgallery .offgallery3 p {
+  font-size: 150%;
+  text-align: center;
+}
+.offersgallery .offgallery1:hover {
+  border: 1px solid #777;
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+.offersgallery .offgallery1  img {
+  width: 100%;
+  height: auto;
+}
+.offersgallery .offgallery2:hover {
+  border: 1px solid #777;
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
+}
+.offersgallery .offgallery2  img {
+  width: 100%;
+  height: auto;
+}
+.offersgallery .offgallery3:hover {
+  border: 1px solid #777;
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
+}
+.offersgallery .offgallery3  img {
+  width: 100%;
+  height: auto;
+}
+.offersgallery .desc {
   padding: 15px;
   text-align: center;
   font-size: 120%;
