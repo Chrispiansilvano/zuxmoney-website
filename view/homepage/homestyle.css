@@ -1,10 +1,12 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  /* background-color: rgb(0, 0, 0); */
+  background-color: rgb(0, 0, 0);
 }
-
-:root{
+* {
+  box-sizing: border-box;
+}
+:root {
   --golden: rgb(230, 212, 14);
 }
 
@@ -15,24 +17,22 @@ body {
   /* padding-left: 2%; */
   width: 100%;
 }
-.topnav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  /* background-color: #333; */
-  /* border-radius: 2px; */
-  width: 100;
-}
 
-.topnav li {
+.subtop {
+  /* background-color: purple; */
+  float: left;
+  width: 60%;
+  list-style-type: none;
+  margin-top: 2%;
+}
+.subtop li {
   float: right;
   /* display: inline; */
   margin-top: 3%;
   margin-right: 2%;
 }
 
-.topnav li a {
+.subtop li a {
   display: block;
   color: white;
   text-align: center;
@@ -40,10 +40,22 @@ body {
   text-decoration: none;
   font-size: 150%;
   float: left;
+  position: relative;
+}
+.subtop li a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--golden);
 }
 
-.topnav li a:hover {
-  background-color: var(--golden);
+.subtop a:hover:after {
+  width: 100%;
 }
 
 .logo {
@@ -55,65 +67,58 @@ body {
   text-decoration: none;
   margin-right: 200px;
   font-size: 150%;
+  margin-top: 2%;
+  
+
 }
 
-.backimage{
+.backimage {
   height: 700px;
   background-image: url(../../src/images/pic5.jpg);
   margin-top: 0%;
   position: relative;
   top: 0;
   animation: change 30s infinite ease-in-out;
+  background-size: 100% 100%;
 }
-@keyframes change{
-  0%
-  {
+@keyframes change {
+  0% {
     background-image: url(../../src/images/pic5.jpg);
   }
-  20%
-  {
+  20% {
     background-image: url(../../src/images/pic6.jpg);
   }
-  40%
-  {
+  40% {
     background-image: url(../../src/images/pic8.jpg);
   }
-  60%
-  {
+  60% {
     background-image: url(../../src/images/pic5.jpg);
   }
-  80%
-  {
+  80% {
     background-image: url(../../src/images/pic6.jpg);
   }
-  100%
-  {
+  100% {
     background-image: url(../../src/images/pic8.jpg);
   }
-
-
 }
 /* service gallery starts here  */
-.servicesextra{
-
+.servicesextra {
 }
 
 .services .head p {
   font-size: 40px;
   text-align: center;
+  color: white;
 }
 
 .services .head p span {
   color: var(--golden);
 }
 
-
-
-.servicesgallery{
+.servicesgallery {
   padding-left: 5%;
-  
 }
-.servicesgallery span{
+.servicesgallery span {
   color: var(--golden);
 }
 
@@ -125,11 +130,12 @@ body {
   width: 350px;
   margin-right: 4%;
   margin-top: 2%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 .servicesgallery .servigallery1 p {
   font-size: 150%;
   text-align: center;
+  color: white;
 }
 .servicesgallery .servigallery2 {
   margin: 5px;
@@ -139,11 +145,12 @@ body {
   margin-right: 4%;
   border-radius: 4px;
   margin-top: 2%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 .servicesgallery .servigallery2 p {
   font-size: 150%;
   text-align: center;
+  color: white;
 }
 .servicesgallery .servigallery3 {
   margin: 5px;
@@ -153,19 +160,20 @@ body {
   margin-right: 0%;
   border-radius: 4px;
   margin-top: 2%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 .servicesgallery .servigallery3 p {
   font-size: 150%;
   text-align: center;
+  color: white;
 }
 .servicesgallery .servigallery1:hover {
   border: 1px solid #777;
   -ms-transform: scale(1.05); /* IE 9 */
   -webkit-transform: scale(1.05); /* Safari 3-8 */
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
-.servicesgallery .servigallery1  img {
+.servicesgallery .servigallery1 img {
   width: 100%;
   height: auto;
 }
@@ -175,7 +183,7 @@ body {
   -webkit-transform: scale(1.05); /* Safari 3-8 */
   transform: scale(1.05);
 }
-.servicesgallery .servigallery2  img {
+.servicesgallery .servigallery2 img {
   width: 100%;
   height: auto;
 }
@@ -185,7 +193,7 @@ body {
   -webkit-transform: scale(1.05); /* Safari 3-8 */
   transform: scale(1.05);
 }
-.servicesgallery .servigallery3  img {
+.servicesgallery .servigallery3 img {
   width: 100%;
   height: auto;
 }
@@ -193,6 +201,7 @@ body {
   padding: 15px;
   text-align: center;
   font-size: 120%;
+  color: white;
 }
 /* special offers gallery starts here  */
 .offers .head {
@@ -201,14 +210,15 @@ body {
 .offers .head p {
   font-size: 40px;
   text-align: center;
+  color: white;
 }
 .offers .head p span {
   color: var(--golden);
 }
-.offersgallery{
+.offersgallery {
   padding-left: 5%;
 }
-.offersgallery span{
+.offersgallery span {
   color: var(--golden);
 }
 .offersgallery .offgallery1 {
@@ -219,11 +229,12 @@ body {
   width: 350px;
   margin-right: 4%;
   margin-top: 2%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 .offersgallery .offgallery1 p {
   font-size: 150%;
   text-align: center;
+  color: white;
 }
 .offersgallery .offgallery2 {
   margin: 5px;
@@ -233,11 +244,12 @@ body {
   margin-right: 4%;
   border-radius: 4px;
   margin-top: 2%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 .offersgallery .offgallery2 p {
   font-size: 150%;
   text-align: center;
+  color: white;
 }
 .offersgallery .offgallery3 {
   margin: 5px;
@@ -247,19 +259,20 @@ body {
   margin-right: 0%;
   border-radius: 4px;
   margin-top: 2%;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 .offersgallery .offgallery3 p {
   font-size: 150%;
   text-align: center;
+  color: white;
 }
 .offersgallery .offgallery1:hover {
   border: 1px solid #777;
   -ms-transform: scale(1.05); /* IE 9 */
   -webkit-transform: scale(1.05); /* Safari 3-8 */
-  transform: scale(1.05); 
+  transform: scale(1.05);
 }
-.offersgallery .offgallery1  img {
+.offersgallery .offgallery1 img {
   width: 100%;
   height: auto;
 }
@@ -269,7 +282,7 @@ body {
   -webkit-transform: scale(1.05); /* Safari 3-8 */
   transform: scale(1.05);
 }
-.offersgallery .offgallery2  img {
+.offersgallery .offgallery2 img {
   width: 100%;
   height: auto;
 }
@@ -279,7 +292,7 @@ body {
   -webkit-transform: scale(1.05); /* Safari 3-8 */
   transform: scale(1.05);
 }
-.offersgallery .offgallery3  img {
+.offersgallery .offgallery3 img {
   width: 100%;
   height: auto;
 }
@@ -287,6 +300,7 @@ body {
   padding: 15px;
   text-align: center;
   font-size: 120%;
+  color: white;
 }
 
 /* footer starts here */
@@ -294,17 +308,17 @@ body {
 .footer {
   background-color: #252323;
   padding: 15px;
-  text-align: center; 
+  text-align: center;
   height: 300%;
   color: aliceblue;
   margin-top: 58%;
- 
+  padding-left: 15%;
 }
 
-.row .column h2{
+.row .column h3 {
   color: var(--golden);
 }
-.row .column p{
+.row .column p {
   font-size: 120%;
 }
 /* Create three equal columns that floats next to each other */
@@ -322,16 +336,9 @@ body {
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
-    width: 100%;
-  }
-}
-
 /* social media icons */
 .fa {
-  padding: 10px; 
+  padding: 10px;
   font-size: 25px;
   width: 25px;
   height: 25px;
@@ -339,38 +346,100 @@ body {
   text-decoration: none;
   margin: 4px 1px;
   border-radius: 50%;
- 
-  
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 .fa-instagram {
-  background:  rgb(173, 25, 165);
-  color: white;
+  /* background:  rgb(173, 25, 165); */
+  color: var(--golden);
 }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+  /* background: #3B5998; */
+  color: var(--golden);
 }
 
 .fa-telegram {
-  background: #3888a8;
-  color: white;
+  /* background: #3888a8; */
+  color: var(--golden);
 }
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+  /* background: #55ACEE; */
+  color: var(--golden);
 }
 
 .fa-whatsapp {
-  background: #12be29;
-  color: white;
+  /* background: #12be29; */
+  color: var(--golden);
 }
-  
+/* responsiveness */
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .subtop{
+    float: left;
+    width: 40%;
+    list-style-type: none;
+    margin-top: 2%;
+    transform: rotate(180deg);
+    
+  }
+  .topnav ul > li {
+    transform: rotate(-180deg);
+  }
+  .subtop li {
+    float: right;
+    display: inline;
+    margin-top: 3%;
+    margin-right: 22%;
+    margin-left: 0%;
+  }
+  .subtop li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .logo{
+    margin-left: 21%;
+  }
 
+  .footer {
+    margin-top: 450%;
+    padding-left: 1%;
+  }
+  .servicesgallery {
+    padding-left: 12%;
+  }
+  .offersgallery {
+    padding-left: 12%;
+  }
+  .servicesgallery .servigallery1 {
+  }
+  .column {
+    width: 100%;
+  }
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+}
