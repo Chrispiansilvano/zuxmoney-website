@@ -13,8 +13,6 @@ body {
 .topnav {
   position: relative;
   top: 0;
-  /* padding-right: 3%;    */
-  /* padding-left: 2%; */
   width: 100%;
 }
 
@@ -68,8 +66,6 @@ body {
   margin-right: 200px;
   font-size: 150%;
   margin-top: 2%;
-  
-
 }
 
 .backimage {
@@ -102,7 +98,13 @@ body {
   }
 }
 /* service gallery starts here  */
-.servicesextra {
+.services {
+  display: grid;
+  place-items: center;
+}
+
+.head {
+  /* background-color: yellow; */
 }
 
 .services .head p {
@@ -117,6 +119,8 @@ body {
 
 .servicesgallery {
   padding-left: 5%;
+  width: 97%;
+  
 }
 .servicesgallery span {
   color: var(--golden);
@@ -127,10 +131,12 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
   float: left;
-  width: 350px;
+  /* width: 412px; */
+  width: 28.33%;
   margin-right: 4%;
   margin-top: 2%;
   transition: transform 0.2s;
+  align-items: center;
 }
 .servicesgallery .servigallery1 p {
   font-size: 150%;
@@ -141,7 +147,7 @@ body {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 350px;
+  width: 28.33%;
   margin-right: 4%;
   border-radius: 4px;
   margin-top: 2%;
@@ -156,7 +162,7 @@ body {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 350px;
+  width: 28.33%;
   margin-right: 0%;
   border-radius: 4px;
   margin-top: 2%;
@@ -203,7 +209,33 @@ body {
   font-size: 120%;
   color: white;
 }
+/* Clear floats after the columns */
+.servicesgallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* special offers gallery starts here  */
+.offers {
+  
+  display: grid;
+  place-items: center;
+}
+.offersgallery {
+  padding-left: 5%;
+  width: 97%;
+ 
+}
+/* Clear floats after the columns */
+.offersgallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.specialoffers {
+  /* background-color: purple; */
+  /* margin-top: 40%; */
+}
 .offers .head {
   margin-top: 2%;
 }
@@ -215,9 +247,7 @@ body {
 .offers .head p span {
   color: var(--golden);
 }
-.offersgallery {
-  padding-left: 5%;
-}
+
 .offersgallery span {
   color: var(--golden);
 }
@@ -226,7 +256,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
   float: left;
-  width: 350px;
+  width: 28.33%;
   margin-right: 4%;
   margin-top: 2%;
   transition: transform 0.2s;
@@ -240,7 +270,7 @@ body {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 350px;
+  width: 28.33%;
   margin-right: 4%;
   border-radius: 4px;
   margin-top: 2%;
@@ -255,7 +285,7 @@ body {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 350px;
+  width: 28.33%;
   margin-right: 0%;
   border-radius: 4px;
   margin-top: 2%;
@@ -311,7 +341,7 @@ body {
   text-align: center;
   height: 300%;
   color: aliceblue;
-  margin-top: 58%;
+  margin-top: 2%;
   padding-left: 15%;
 }
 
@@ -338,13 +368,13 @@ body {
 
 /* social media icons */
 .fa {
-  padding: 10px;
+  /* padding: 10px; */
   font-size: 25px;
   width: 25px;
   height: 25px;
   text-align: center;
   text-decoration: none;
-  margin: 4px 1px;
+  /* margin: 4px 1px; */
   border-radius: 50%;
 }
 
@@ -377,18 +407,15 @@ body {
 }
 /* responsiveness */
 
-/* Extra small devices (phones, 600px and down) */
+
+
 @media only screen and (max-width: 600px) {
-  .subtop{
+   .subtop {
     float: left;
     width: 40%;
     list-style-type: none;
     margin-top: 2%;
     transform: rotate(180deg);
-    
-  }
-  .topnav ul > li {
-    transform: rotate(-180deg);
   }
   .subtop li {
     float: right;
@@ -402,44 +429,97 @@ body {
     color: white;
     padding: 8px 16px;
     text-decoration: none;
+    
   }
-  .logo{
-    margin-left: 21%;
+  .topnav ul > li {
+    transform: rotate(-180deg);
   }
+  .logo {
+    margin-left: 2%;
+  }
+  .backimage {
+    /* height: 400px; */
+    height: 450px;
+  background-image: url(../../src/images/pic5.jpg);
+  margin-top: 0%;
+  position: relative;
+  top: 0;
+  animation: change 30s infinite ease-in-out;
+  background-size: 100% 100%;
+  }
+  /*
+  
+  
+  
+  
 
   .footer {
-    margin-top: 450%;
+    margin-top: 2%;
     padding-left: 1%;
-  }
+    width: 338px;
+    height: 600px;
+  } */
+
   .servicesgallery {
-    padding-left: 12%;
+    display: grid;
+    place-items: center;
+
   }
-  .offersgallery {
-    padding-left: 12%;
+  
+  .servicesgallery .servigallery1{
+    width: 70.33%;
+    margin-right:0%;
+    padding: 0%;
   }
-  .servicesgallery .servigallery1 {
+  .servicesgallery .servigallery2{
+    width: 70.33%;
+    margin-right:0%;
+    padding: 0%;
+  }
+  .servicesgallery .servigallery3{
+    width: 70.33%;
+    margin-right:0%;
+    padding: 0%;
+  }
+  .offersgallery{
+    display: grid;
+    place-items: center;
+  }
+  .offersgallery .offgallery1{
+    width: 70.33%;
+    margin-right:0%;
+    padding: 0%;
+  }
+  .offersgallery .offgallery2{
+    width: 70.33%;
+    margin-right:0%;
+    padding: 0%;
+  }
+  .offersgallery .offgallery3{
+    width: 70.33%;
+    margin-right:0%;
+    padding: 0%;
   }
   .column {
-    width: 100%;
+    width: 90%;
   }
 }
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+/* @media only screen and (min-width: 600px) {
+} */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+/* @media only screen and (min-width: 768px) {
+} */
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+/* @media only screen and (min-width: 992px) {
+} */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+/* @media only screen and (min-width: 1200px) {
+} */
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-}
+/* @media screen and (max-width: 600px) {
+} */
