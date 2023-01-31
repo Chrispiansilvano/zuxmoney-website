@@ -1,9 +1,14 @@
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  /* background-color: rgb(0, 0, 0); */
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 
+body {
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(0, 0, 0);
+}
+* {
+  box-sizing: border-box;
+}
 :root {
   --golden: rgb(230, 212, 14);
 }
@@ -15,24 +20,21 @@ body {
   /* padding-left: 2%; */
   width: 100%;
 }
-.topnav ul {
+.subtop {
+  /* background-color: purple; */
+  float: left;
+  width: 60%;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  /* background-color: #333; */
-  /* border-radius: 2px; */
-  width: 100;
+  margin-top: 2%;
 }
-
-.topnav li {
+.subtop li {
   float: right;
   /* display: inline; */
   margin-top: 3%;
   margin-right: 2%;
 }
 
-.topnav li a {
+.subtop li a {
   display: block;
   color: white;
   text-align: center;
@@ -40,12 +42,22 @@ body {
   text-decoration: none;
   font-size: 150%;
   float: left;
+  position: relative;
 }
-
-.topnav li a:hover {
+.subtop li a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
   background-color: var(--golden);
 }
-
+.subtop a:hover:after {
+  width: 100%;
+}
 .logo {
   float: left;
   display: block;
@@ -55,8 +67,8 @@ body {
   text-decoration: none;
   margin-right: 200px;
   font-size: 150%;
+  margin-top: 2%;
 }
-
 .backimage {
   height: 300px;
   background-image: url(../../src/images/pic7.jpg);
@@ -65,7 +77,7 @@ body {
   top: 0;
   /* animation: change 30s infinite ease-in-out; */
 }
-@keyframes change {
+/* @keyframes change {
   0% {
     background-image: url(../../src/images/pic2.jpg);
   }
@@ -84,72 +96,92 @@ body {
   100% {
     background-image: url(../../src/images/pic3.jpg);
   }
-}
+} */
 
 /* gallery */
-  
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    margin-left: 2%;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 20.5%;
-    padding: 0 25px;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  /* background-color: yellow; */
+  width: 100%;
+}
 
-  }
-  
-  .column img {
-    margin-top: 25px;
-    vertical-align: middle;
-    width: 100%;
-    border-radius: 3%;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+/* Create four equal columns that sits next to each other */
+.column {
+  /* background-color: red; */
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 2%;
+}
+
 /* footer starts here */
 
 .footer {
   background-color: #252323;
   padding: 15px;
-  text-align: center;
+  /* text-align: center; */
   height: 300%;
-  color: aliceblue;
-  margin-top: 3%;
+  color: white;
+  margin-top: 2%;
+  /* padding-left: 15%; */
+  display: grid;
+  place-items: center;
 }
 
-.rowf .columnf h2 {
+.rowf h3 {
   color: var(--golden);
+  text-align: center;
 }
-.rowf .columnf p {
+.rowf p {
   font-size: 120%;
 }
-/* Create three equal columns that floats next to each other */
-.columnf {
-  float: left;
-  width: 29%;
-  padding: 15px;
-  margin-right: 2%;
+.rowf {
+  /* background-color: purple; */
+  width: 98%;
 }
 
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 32%;
+  /* background-color: red; */
+  /* padding: 15px; */
+  /* margin-right: 2%; */
+  display: grid;
+  place-items: center;
+}
+.column2 {
+  float: left;
+  width: 32%;
+  /* background-color: yellow; */
+  /* padding: 15px; */
+  /* margin-right: 2%; */
+  display: grid;
+  place-items: center;
+}
+.column3 {
+  float: left;
+  width: 32%;
+  /* background-color: pink; */
+  /* padding: 15px; */
+  /* margin-right: 2%; */
+  display: grid;
+  place-items: center;
+}
 /* Clear floats after the columns */
 .rowf:after {
   content: "";
@@ -157,18 +189,11 @@ body {
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .columnf {
-    width: 100%;
-  }
-}
-
 /* social media icons */
 .fa {
-  padding: 10px;
+  /* padding: 10px; */
   font-size: 25px;
-  width: 25px;
+  width: 86px;
   height: 25px;
   text-align: center;
   text-decoration: none;
@@ -176,30 +201,106 @@ body {
   border-radius: 50%;
 }
 
+.socialicons {
+  /* background-color: green; */
+}
+
 .fa:hover {
   opacity: 0.7;
 }
 .fa-instagram {
-  background: rgb(173, 25, 165);
-  color: white;
+  /* background:  rgb(173, 25, 165); */
+  color: var(--golden);
 }
 
 .fa-facebook {
-  background: #3b5998;
-  color: white;
+  /* background: #3B5998; */
+  color: var(--golden);
 }
 
 .fa-telegram {
-  background: #3888a8;
-  color: white;
+  /* background: #3888a8; */
+  color: var(--golden);
 }
 
 .fa-twitter {
-  background: #55acee;
-  color: white;
+  /* background: #55ACEE; */
+  color: var(--golden);
 }
 
 .fa-whatsapp {
-  background: #12be29;
-  color: white;
+  /* background: #12be29; */
+  color: var(--golden);
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+    display: grid;
+    place-items: center;
+    align-content: center;
+  }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .subtop {
+    float: left;
+    width: 40%;
+    list-style-type: none;
+    margin-top: 2%;
+    transform: rotate(180deg);
+  }
+  .subtop li {
+    float: right;
+    display: inline;
+    margin-top: 3%;
+    margin-right: 22%;
+    margin-left: 0%;
+  }
+  .subtop li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .topnav ul > li {
+    transform: rotate(-180deg);
+  }
+  .logo {
+    margin-left: 2%;
+  }
+  .backimage {
+    height: 450px;
+  }
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    display: grid;
+    place-items: center;
+    align-content: center;
+  }
+
+  .rowf {
+    display: grid;
+    place-items: center;
+    align-content: center;
+  }
+  .column1 {
+    width: 90%;
+  }
+  .column2 {
+    width: 90%;
+  }
+  .column3 {
+    width: 90%;
+  }
+  .fa {
+    /* padding: 10px; */
+    font-size: 25px;
+    width: 50px;
+  }
 }
