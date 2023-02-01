@@ -13,7 +13,10 @@ body {
 :root {
   --golden: rgb(230, 212, 14);
 }
-
+.active{
+  border-bottom: 3px solid var(--golden);
+  padding-bottom: 3px;
+}
 .topnav {
   position: relative;
   top: 0;
@@ -137,10 +140,12 @@ body {
 
 .head {
   /* background-color: yellow; */
+
+
 }
 
 .services .head p {
-  font-size: 40px;
+  font-size:40px;
   text-align: center;
   color: white;
 }
@@ -152,6 +157,7 @@ body {
 .servicesgallery {
   /* padding-left: 5%; */
   width: 97%;
+  /* background-color: orange;  */
   
 }
 .servicesgallery span {
@@ -244,9 +250,13 @@ body {
 }
 .servicesgallery .desc {
   padding: 15px;
-  text-align: center;
+  /* text-align: center; */
   font-size: 120%;
   color: white;
+  border-left: 3px solid var(--golden);
+  border-top-left-radius: 20%;
+
+
 }
 /* Clear floats after the columns */
 .servicesgallery:after {
@@ -376,10 +386,16 @@ body {
 }
 .offersgallery .desc {
   padding: 15px;
-  text-align: center;
+  /* text-align: center; */
   font-size: 120%;
   color: white;
+  border-left: 3px solid var(--golden);
+  border-top-left-radius: 20%;
 }
+.hr{
+  display: none;
+}
+
 
 /* footer starts here */
 
@@ -458,6 +474,21 @@ body {
 .socialicons{
   /* background-color: green; */
 }
+.tik{
+  /* background-color: blue; */
+  float: left;
+  margin-right: 4px;
+  margin-top: 5px;
+}
+.socialicons img{
+  font-size: 25px;
+  height: 25px;
+  background-color: var(--golden);
+  border-radius: 50%;
+  text-align: center;
+  color: var(--golden);
+  /* margin: 4px 1px; */
+}
 
 .fa:hover {
   opacity: 0.7;
@@ -491,6 +522,13 @@ body {
 
 
 @media only screen and (max-width: 600px) {
+  .active{
+    border-bottom: none;
+    border-left: 10px solid var(--golden);
+    padding-bottom: 3px;
+    border-radius: 50%;
+    
+  }
   .hidden{
     transition: none;
   }
@@ -531,11 +569,26 @@ body {
   animation: change 30s infinite ease-in-out;
   background-size: 100% 100%;
   }
+  .hr{
+    display: block;
+    width: 85.33%;
+    /* background-color: red; */
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .hr hr{
+    
+    width: 50%;
+  }
   
   /* .footer {
   
   }  */
-
+  
+  .services .head p {
+    font-size:30px;
+    
+  }
   .servicesgallery {
     display: grid;
     place-items: center;
@@ -548,6 +601,16 @@ body {
     padding: 0%;
     border: none;
   }
+  .servicesgallery   .servigallery1 p{
+    font-size: 20px;
+  }
+  .servicesgallery   .servigallery2 p{
+    font-size: 20px;
+  }
+  .servicesgallery   .servigallery3 p{
+    font-size: 20px;
+  }
+  
   .servicesgallery .servigallery1:hover {
     /* border: 1px solid #777; */
     border: none;
@@ -560,6 +623,7 @@ body {
     margin-right:0%;
     padding: 0%;
   }
+  
   .servicesgallery .servigallery2:hover {
     /* border: 1px solid #777; */
     border: none;
@@ -579,6 +643,10 @@ body {
     -webkit-transform: scale(1); /* Safari 3-8 */
     transform: scale(1);
   }
+  .offers .head p {
+    font-size:30px;
+    
+  }
   .offersgallery{
     display: grid;
     place-items: center;
@@ -587,6 +655,15 @@ body {
     width: 85.33%;
     margin-right:0%;
     padding: 0%;
+  }
+  .offersgallery .offgallery1 p{
+    font-size: 20px;
+  }
+  .offersgallery .offgallery2 p{
+    font-size: 20px;
+  }
+  .offersgallery .offgallery3 p{
+    font-size: 20px;
   }
   .offersgallery .offgallery1:hover {
     /* border: 1px solid #777; */
@@ -639,6 +716,7 @@ body {
     width: 50px;
    
   }
+  
 
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */

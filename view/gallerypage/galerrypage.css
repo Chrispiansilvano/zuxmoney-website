@@ -12,7 +12,10 @@ body {
 :root {
   --golden: rgb(230, 212, 14);
 }
-
+.active{
+  border-bottom: 3px solid var(--golden);
+  padding-bottom: 3px;
+}
 .topnav {
   position: relative;
   top: 0;
@@ -200,6 +203,21 @@ body {
   margin: 4px 1px;
   border-radius: 50%;
 }
+.tik{
+  /* background-color: blue; */
+  float: left;
+  margin-right: 4px;
+  margin-top: 5px;
+}
+.socialicons img{
+  font-size: 25px;
+  height: 25px;
+  background-color: var(--golden);
+  border-radius: 50%;
+  text-align: center;
+  color: var(--golden);
+  /* margin: 4px 1px; */
+}
 
 .socialicons {
   /* background-color: green; */
@@ -246,6 +264,13 @@ body {
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+  .active{
+    border-bottom: none;
+    border-left: 10px solid var(--golden);
+    padding-bottom: 3px;
+    border-radius: 50%
+    
+  }
   .subtop {
     float: left;
     width: 40%;

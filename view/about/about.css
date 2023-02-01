@@ -11,7 +11,10 @@ body {
 :root {
   --golden: rgb(230, 212, 14);
 }
-
+.active{
+  border-bottom: 3px solid var(--golden);
+  padding-bottom: 3px;
+}
 .topnav {
   position: relative;
   top: 0;
@@ -121,14 +124,22 @@ body {
 
 .para {
   /* height: 400px; */
-  width: 95%;
+  width: 90%;
   /* margin-left: 10%; */
   /* background-color: yellow; */
+  border-left: 3px solid var(--golden);
+  border-top-left-radius: 20%;
+
 }
 
 .para p {
   font-size: 150%;
   color: white;
+  /* width: 80%; */
+  margin-left: 4%;
+  margin-top: 4%;
+
+  
 }
 
 
@@ -205,6 +216,21 @@ body {
   margin: 4px 1px;
   border-radius: 50%;
 }
+.tik{
+  /* background-color: blue; */
+  float: left;
+  margin-right: 4px;
+  margin-top: 5px;
+}
+.socialicons img{
+  font-size: 25px;
+  height: 25px;
+  background-color: var(--golden);
+  border-radius: 50%;
+  text-align: center;
+  color: var(--golden);
+  /* margin: 4px 1px; */
+}
 
 .socialicons{
   /* background-color: green; */
@@ -240,7 +266,13 @@ body {
 
 /* responsiveness */
 @media only screen and (max-width: 600px) {
-
+  .active{
+    border-bottom: none;
+    border-left: 10px solid var(--golden);
+    padding-bottom: 3px;
+    border-radius: 50%
+    
+  }
    .subtop {
     float: left;
     width: 40%;

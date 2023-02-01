@@ -12,7 +12,10 @@ body {
 :root {
   --golden: rgb(230, 212, 14);
 }
-
+.active{
+  border-bottom: 3px solid var(--golden);
+  padding-bottom: 3px;
+}
 .topnav {
   position: relative;
   top: 0;
@@ -59,6 +62,9 @@ body {
 
 .subtop a:hover:after {
   width: 100%;
+}
+.hr{
+  display: none;
 }
 
 .logo {
@@ -246,9 +252,11 @@ body {
 }
 .servicesgallery .desc {
   padding: 15px;
-  text-align: center;
+  /* text-align: center; */
   font-size: 120%;
   color: white;
+  border-left: 3px solid var(--golden);
+  border-top-left-radius: 20%;
 }
 /* Clear floats after the columns */
 .servicesgallery:after {
@@ -378,9 +386,11 @@ body {
 }
 .offersgallery .desc {
   padding: 15px;
-  text-align: center;
+  /* text-align: center; */
   font-size: 120%;
   color: white;
+  border-left: 3px solid var(--golden);
+  border-top-left-radius: 20%;
 }
 /* nails gallery start here */
 
@@ -497,9 +507,11 @@ body {
 }
 .nailgallery .desc {
   padding: 15px;
-  text-align: center;
+  /* text-align: center; */
   font-size: 120%;
   color: white;
+  border-left: 3px solid var(--golden);
+  border-top-left-radius: 20%;
 }
 /* Clear floats after the columns */
 .nailgallery:after {
@@ -581,6 +593,21 @@ body {
   margin: 4px 1px;
   border-radius: 50%;
 }
+.tik{
+  /* background-color: blue; */
+  float: left;
+  margin-right: 4px;
+  margin-top: 5px;
+}
+.socialicons img{
+  font-size: 25px;
+  height: 25px;
+  background-color: var(--golden);
+  border-radius: 50%;
+  text-align: center;
+  color: var(--golden);
+  /* margin: 4px 1px; */
+}
 
 .socialicons {
   /* background-color: green; */
@@ -618,6 +645,13 @@ body {
 /* responsiveness */
 
 @media only screen and (max-width: 600px) {
+  .active{
+    border-bottom: none;
+    border-left: 10px solid var(--golden);
+    padding-bottom: 3px;
+    border-radius: 50%
+    
+  }
   .hidden{
     transition: none;
   }
@@ -658,17 +692,38 @@ body {
   animation: change 30s infinite ease-in-out;
   background-size: 100% 100%;
   }
-  
+  .hr{
+    display: block;
+    width: 85.33%;
+    /* background-color: red; */
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .hr hr{
+    
+    width: 50%;
+  }
   /* .footer {
   
   }  */
-
+  .services .head p {
+    font-size:30px;
+    
+  }
   .servicesgallery {
     display: grid;
     place-items: center;
 
   }
-  
+  .servicesgallery   .servigallery1 p{
+    font-size: 20px;
+  }
+  .servicesgallery   .servigallery2 p{
+    font-size: 20px;
+  }
+  .servicesgallery   .servigallery3 p{
+    font-size: 20px;
+  }
   .servicesgallery .servigallery1{
     width: 85.33%;
     margin-right:0%;
@@ -706,6 +761,10 @@ body {
     -webkit-transform: scale(1); /* Safari 3-8 */
     transform: scale(1);
   }
+  .offers .head p {
+    font-size:30px;
+    
+  }
   .offersgallery{
     display: grid;
     place-items: center;
@@ -734,6 +793,15 @@ body {
     -webkit-transform: scale(1); /* Safari 3-8 */
     transform: scale(1);
   }
+  .offersgallery .offgallery1 p{
+    font-size: 20px;
+  }
+  .offersgallery .offgallery2 p{
+    font-size: 20px;
+  }
+  .offersgallery .offgallery3 p{
+    font-size: 20px;
+  }
   .offersgallery .offgallery3{
     width: 85.33%;
     margin-right:0%;
@@ -745,6 +813,10 @@ body {
     -ms-transform: scale(1); /* IE 9 */
     -webkit-transform: scale(1); /* Safari 3-8 */
     transform: scale(1);
+  }
+  .nails .head p {
+    font-size:30px;
+    
   }
   .nailgallery{
     display: grid;
@@ -778,6 +850,15 @@ body {
     width: 85.33%;
     margin-right:0%;
     padding: 0%;
+  }
+  .nailgallery .nailgallery1 p{
+    font-size: 20px;
+  }
+  .nailgallery .nailgallery2 p{
+    font-size: 20px;
+  }
+  .nailgallery .nailgallery3 p{
+    font-size: 20px;
   }
   .nailgallery .nailgallery3:hover {
     /* border: 1px solid #777; */
