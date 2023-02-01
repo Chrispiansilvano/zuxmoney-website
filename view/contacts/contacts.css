@@ -4,6 +4,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
   font-family: "Poppins", sans-serif;
   background-color: rgb(0, 0, 0);
+  margin: 0%;
 }
 * {
   box-sizing: border-box;
@@ -12,7 +13,7 @@ body {
 :root {
   --golden: rgb(230, 212, 14);
 }
-.active{
+.active {
   border-bottom: 3px solid var(--golden);
   padding-bottom: 3px;
 }
@@ -62,7 +63,7 @@ body {
 .subtop a:hover:after {
   width: 100%;
 }
-.hr{
+.hr {
   display: none;
 }
 .logo {
@@ -141,7 +142,6 @@ body {
   border-top-left-radius: 20%;
   padding-left: 2%;
   padding-top: 1%;
-
 }
 
 /* form */
@@ -287,13 +287,13 @@ input[type="submit"]:hover {
   margin: 4px 1px;
   border-radius: 50%;
 }
-.tik{
+.tik {
   /* background-color: blue; */
   float: left;
   margin-right: 4px;
   margin-top: 5px;
 }
-.socialicons img{
+.socialicons img {
   font-size: 25px;
   height: 25px;
   background-color: var(--golden);
@@ -337,52 +337,54 @@ input[type="submit"]:hover {
 
 /* responsiveness */
 @media only screen and (max-width: 600px) {
-  .hr{
+  .hr {
     display: block;
     width: 85.33%;
     /* background-color: red; */
     margin-top: 2%;
     margin-bottom: 2%;
   }
-  .hr hr{
-    
+  .hr hr {
     width: 50%;
   }
-  
-  .active{
+  .contact .head p {
+    font-size: 30px;
+  }
+  .active {
     border-bottom: none;
     border-left: 10px solid var(--golden);
     padding-bottom: 3px;
-    border-radius: 50%
-    
+    border-radius: 50%;
   }
   .contactcont {
     display: grid;
     place-items: center;
     align-content: center;
-    
   }
   .address {
-    
     width: 100%;
     margin-right: 0%;
     margin-top: 0%;
-   /* background-color: red; */
-    font-size: 150%;
+    /* background-color: red; */
+    font-size: 100%;
+    border-left: 3px solid var(--golden);
+    border-top-left-radius: 15%;
+    padding-left: 4%;
+    padding-top: 3%;
+    height: 100%;
   }
   .formspace {
-    
     margin-top: 3%;
     /* background-color: blue; */
     width: 100%;
     /* float: left; */
     color: white;
   }
-  .contact{
+  .contact {
     width: 100%;
+    
   }
-  
-  
+
   .subtop {
     float: left;
     width: 40%;
@@ -412,15 +414,14 @@ input[type="submit"]:hover {
   .backimage {
     /* height: 400px; */
     height: 450px;
+    border-bottom-left-radius: 3%;
+  border-bottom-right-radius: 3%;
   }
 
-  /*
   .footer {
-    margin-top: 2%;
-    padding-left: 1%;
-    width: 338px;
-    height: 600px;
-  } */
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+  }
 
   .row {
     display: grid;
