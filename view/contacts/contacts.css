@@ -439,8 +439,11 @@ input[type="submit"]:hover {
     margin-left: 2%;
   }
   .backimage {
+    background-image: url(../../src/images/pic5.jpg);
     /* height: 400px; */
     height: 450px;
+    position: relative;
+    background-size: 100% 100%;
     border-bottom-left-radius: 3%;
   border-bottom-right-radius: 3%;
   }
