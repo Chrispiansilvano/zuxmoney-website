@@ -512,6 +512,51 @@ body {
 }
 /* responsiveness */
 
+
+@media only screen and  (max-width: 1253px ) {
+  .active {
+    border-bottom: none;
+    border-left: 10px solid var(--golden);
+    padding-bottom: 3px;
+    border-radius: 50%;
+  }
+  .hidden {
+    transition: none;
+  }
+  .subtop {
+    float: left;
+    width: 80%;
+    list-style-type: none;
+    margin-top: 2%;
+    transform: rotate(180deg);
+    /* background-color: #111; */
+  }
+  .subtop li {
+    float: right;
+    display: inline;
+    margin-top: 3%;
+    margin-right: 22%;
+    margin-left: 0%;
+    /* background-color: yellow; */
+    width: 50%;
+    
+  }
+  .subtop li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .topnav ul > li {
+    transform: rotate(-180deg);
+  }
+  .logo {
+    margin-left: 30%;
+    /* background-color: blue; */
+  }
+  
+}
+
 @media only screen and (max-width: 600px) {
   .active {
     border-bottom: none;

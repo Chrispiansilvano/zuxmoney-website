@@ -334,6 +334,30 @@ input[type="submit"]:hover {
   /* background: #12be29; */
   color: var(--golden);
 }
+@media only screen and (max-width: 1253px) {
+  .subtop{
+    /* background-color: #111; */
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 0%;
+  }
+  .subtop li{
+    /* background-color: purple; */
+    width: 17%;
+    margin-right: 1%;
+
+  }
+  .subtop li a{
+    font-size: 20px;
+    width: 20%;
+
+  }
+  .logo {
+    margin-left: 10%;
+  }
+}
+
+
 
 /* responsiveness */
 @media only screen and (max-width: 600px) {
@@ -387,17 +411,20 @@ input[type="submit"]:hover {
 
   .subtop {
     float: left;
-    width: 40%;
+    width: 70%;
     list-style-type: none;
     margin-top: 2%;
     transform: rotate(180deg);
+    /* background-color: yellow; */
+    padding-right: 0%;
   }
   .subtop li {
     float: right;
     display: inline;
     margin-top: 3%;
-    margin-right: 22%;
+    margin-right: 2%;
     margin-left: 0%;
+    width: 70%;
   }
   .subtop li a {
     display: block;

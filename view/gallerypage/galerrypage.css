@@ -251,6 +251,30 @@ body {
   /* background: #12be29; */
   color: var(--golden);
 }
+/* responsiveness */
+@media only screen and (max-width: 1253px) {
+  .subtop{
+    /* background-color: #111; */
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 0%;
+  }
+  .subtop li{
+    /* background-color: purple; */
+    width: 17%;
+    margin-right: 1%;
+
+  }
+  .subtop li a{
+    font-size: 20px;
+    width: 20%;
+
+  }
+  .logo {
+    margin-left: 10%;
+  }
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -274,17 +298,19 @@ body {
   }
   .subtop {
     float: left;
-    width: 40%;
+    width: 70%;
     list-style-type: none;
     margin-top: 2%;
     transform: rotate(180deg);
+    padding-right: 0%;
   }
   .subtop li {
     float: right;
     display: inline;
     margin-top: 3%;
-    margin-right: 22%;
+    margin-right: 2%;
     margin-left: 0%;
+    width: 70%;
   }
   .subtop li a {
     display: block;
